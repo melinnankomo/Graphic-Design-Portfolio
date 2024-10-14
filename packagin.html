@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Packaging</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Packaging</h1>
+      </header>
+      <section>
+        <!-- Logos 1 -->
+        <div class="business-card">
+          <h3>Coffee Packaging</h3>
+          <img
+          src="./assets/1/1.png"
+          alt="Project 1"
+          class="project-img"
+        />
+        </div>
+
+        <!-- Logos 2 -->
+        <div class="business-card">
+          <h3>Some Inspiration</h3>
+          <img
+          src="./assets/1/2.png"
+          alt="Project 1"
+          class="project-img"
+        />
+          <p>Logos description</p>
+        </div>
+
+        <!-- Logos 3 -->
+        <div class="business-card">
+          <h3>Green Pasture Tea</h3>
+          <img
+          src="./assets/1/packaging 1.png"
+          alt="Project 1"
+          class="project-img"
+        />
+          <p>Logos description</p>
+        </div>
+
+        <!-- Logos 4 -->
+        <div class="business-card">
+          <h3>Green Pasture Tea</h3>
+          <img
+          src="./assets/1/packaging 1.png"
+          alt="Project 1"
+          class="project-img"
+        />
+          <p>Logos description</p>
+        </div>
+
+        <!-- Logos 5 -->
+        <div class="business-card">
+          <h3>Green Pasture Tea</h3>
+          <img
+          src="./assets/1/packaging 2.png"
+          alt="Project 1"
+          class="project-img"
+        />
+          <p>Logos description</p>
+        </div>
+
+      </section>
+    </div>
+  </body>
+</html>
+
+<style>
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* Grid layout for Logos */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px; /* Larger gap for bigger cards */
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Individual business card styling */
+.business-card {
+  background-color: #fff;
+  padding: 30px; /* Increase padding for larger cards */
+  border-radius: 16px; /* More rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.business-card:hover {
+  transform: translateY(-15px); /* More pronounced hover effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.business-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px; /* Match card border radius */
+  margin-bottom: 20px;
+}
+
+.business-card h3 {
+  font-size: 1.75rem; /* Larger font size for headings */
+  margin-bottom: 12px;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.business-card p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+  .business-card h3 {
+    font-size: 1.5rem;
+  }
+  
+}
+</style>

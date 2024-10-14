@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Social Media</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Social Media</h1>
+      </header>
+      <section>
+        <!-- social media 1 -->
+        <div class="business-card">
+          <h3>Plant your own Garden</h3>
+          <img
+            src="./assets/1/Blue Bold Abstract Organic Flower Quote Art Poster (1).png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+
+        <!-- social media 2 -->
+        <div class="business-card">
+          <h3>Coffee </h3>
+          <img src="./assets/1/BREW.png" alt="Project 1" class="project-img" />
+          <p>Logos description</p>
+        </div>
+
+        <!-- social media 3 -->
+        <div class="business-card">
+          <h3>Art Exhibition</h3>
+          <img
+            src="./assets/1/Green Minimalist Art Exhibition Poster (1).png"
+            alt="Project 1"
+            class="project-img"
+          />
+          <p>Social Media description</p>
+        </div>
+
+        <!-- social media 4 -->
+        <div class="business-card">
+          <h3>Blur Flowers</h3>
+          <img
+            src="./assets/1/Black and Beige Photo New Post Instagram Post (1).png"
+            alt="Project 1"
+            class="project-img"
+          />
+          <p>Social Media description</p>
+        </div>
+
+        <!-- social media 5 -->
+        <div class="business-card">
+          <h3>Wellness Co</h3>
+          <img
+            src="./assets/1/Neutral Grid Photo Collage Instagram Post (1).png"
+            alt="Project 1"
+            class="project-img"
+          />
+          <p>Logos description</p>
+        </div>
+
+        <!-- social media -->
+        <div class="business-card">
+          <h3>Divergence</h3>
+          <video
+            class="project-video"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="./assets/1/Neutral Beige Grid Video Beauty Instagram Post (1).mp4" type="video/mp4" />
+          </video>
+          <p>Logos description</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<style>
+   .project-video {
+  width: 100%; /* Same width as images */
+  height: auto;
+  border-radius: 16px; /* Match the border-radius of images */
+  object-fit: cover; /* Ensures video fills its container */
+  display: block;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* Grid layout for Logos */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px; /* Larger gap for bigger cards */
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Individual business card styling */
+.business-card {
+  background-color: #fff;
+  padding: 30px; /* Increase padding for larger cards */
+  border-radius: 16px; /* More rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.business-card:hover {
+  transform: translateY(-15px); /* More pronounced hover effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.business-card img,
+.business-card video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px; /* Match card border radius */
+  margin-bottom: 20px;
+}
+
+.business-card h3 {
+  font-size: 1.75rem; /* Larger font size for headings */
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.business-card p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .business-card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+</style>

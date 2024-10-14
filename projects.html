@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/projects.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <section class="flex flex-col">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
+            <div id="category1"</div>>
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Project description</p>
+
+            </div>            <div id="category1">
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Project description</p>
+
+            </div>            <div id="category1">
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Project description</p>
+
+            </div>            <div id="category1">
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Project description</p>
+
+            </div>            <div id="category1">
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Project description</p>
+
+            </div>            <div id="category1">
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Project description</p>
+
+            </div>
+        </section>
+</html>
+<style>
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light gray background for contrast */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Flexbox section styling */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual project card styling */
+#category1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+#category1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#category1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+#category1 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#category1 p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        gap: 15px;
+    }
+
+    #category1 {
+        padding: 15px;
+    }
+
+    #category1 h3 {
+        font-size: 1.25rem;
+    }
+}
+</style>

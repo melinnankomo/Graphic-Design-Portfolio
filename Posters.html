@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Posters</title>
+    <link rel="stylesheet" href="/businessCards.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Business Cards</h1>
+      </header>
+      <section>
+        <!-- Business Card 1 -->
+        <div class="business-card">
+          <h3>Business Card 1</h3>
+          <img src="images/businessCard1.jpg" alt="Business Card 1" />
+          <p>Business card description</p>
+        </div>
+
+        <!-- Business Card 2 -->
+        <div class="business-card">
+          <h3>Business Card 2</h3>
+          <img src="images/businessCard2.jpg" alt="Business Card 2" />
+          <p>Business card description</p>
+        </div>
+
+        <!-- Business Card 3 -->
+        <div class="business-card">
+          <h3>Business Card 3</h3>
+          <img src="images/businessCard3.jpg" alt="Business Card 3" />
+          <p>Business card description</p>
+        </div>
+
+        <!-- Business Card 4 -->
+        <div class="business-card">
+          <h3>Business Card 4</h3>
+          <img src="images/businessCard4.jpg" alt="Business Card 4" />
+          <p>Business card description</p>
+        </div>
+
+        <!-- Business Card 5 -->
+        <div class="business-card">
+          <h3>Business Card 5</h3>
+          <img src="images/businessCard5.jpg" alt="Business Card 5" />
+          <p>Business card description</p>
+        </div>
+
+        <!-- Business Card 6 -->
+        <div class="business-card">
+          <h3>Business Card 6</h3>
+          <img src="images/businessCard6.jpg" alt="Business Card 6" />
+          <p>Business card description</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<style>
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* Grid layout for business cards */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px; /* Larger gap for bigger cards */
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Individual business card styling */
+.business-card {
+  background-color: #fff;
+  padding: 30px; /* Increase padding for larger cards */
+  border-radius: 16px; /* More rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.business-card:hover {
+  transform: translateY(-15px); /* More pronounced hover effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.business-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px; /* Match card border radius */
+  margin-bottom: 20px;
+}
+
+.business-card h3 {
+  font-size: 1.75rem; /* Larger font size for headings */
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.business-card p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .business-card h3 {
+    font-size: 1.5rem;
+  }
+}
+</style>
