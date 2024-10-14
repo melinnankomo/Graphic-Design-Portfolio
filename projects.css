@@ -32,6 +32,11 @@ section {
     gap: 20px;
 }
 
+.color-container {
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+  }
+
 h2 {
     font-size: 2rem;
     text-align: center;
